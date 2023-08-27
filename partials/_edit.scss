@@ -1,0 +1,190 @@
+@import './hoverbutton';
+
+
+
+
+.edit-section{
+    .btn-edit{
+        @include buttonStyle($white-color, $second-color);
+        font-weight: 600;
+        border: 1.5px solid $second-color;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        width: 1rem;
+        padding: 0.5rem 0.6rem;
+        min-width: 7rem;
+        &:hover{
+            background-color: $hover-color;
+        }
+    }
+
+    .left{
+        text-align: center;
+        .profile-img{
+            @include avatarStyle($url:'../assets/img/img-profile.jpg', $width: 15rem);
+            min-width: 15rem;
+            margin: 0px auto;
+        }
+
+        .profile-name{
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+
+        .profile-des{
+            font-size: 1em;
+        }
+
+        #btn-upload{
+            font-size: 1em;
+            width: 10em;
+            padding: 0.2em 0.6em;
+            font-weight: 500;
+        }
+
+        
+    }
+
+    .vertical-line{
+        border-left: 1px solid $second-color;
+        height: 90%;
+        position:absolute;
+        left: 30%;
+        top: 0;
+        bottom: 0;
+        margin: auto 0px;
+    }
+
+    .right{
+        grid-template-rows: auto;
+        row-gap: 3.2rem;
+        .edit-option{
+            
+            justify-items: end;
+            #btn-cancel{
+                font-size: 1.2em;
+                width: 6em;
+              
+            }
+
+            #btn-save {
+                font-size: 1.2em;
+                width: 6em;
+                min-width: 5em;
+                background-color: $second-color;
+                color: white;
+                margin-left: 0.3rem;
+                &:hover{
+                    background-color: $hover-fill;
+                }
+                &:disabled{
+                    background-color: $grey-400 !important;
+                    border: none;
+                    color: white;
+                }
+            }
+        }
+
+        label{
+            font-size: 1.6rem;
+            color: $grey-400;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-message{
+            padding-top: 0.3rem;
+            display: block;
+            color: $active-busy;
+            text-align: left;
+            font-size: 1.2rem;
+        }
+
+        .form-group.invalid .form-control{
+            border: 2px solid $active-busy;
+        }
+
+        input{
+            height: 5.6rem;
+            width: 100%;
+            border: 1px solid $grey-600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 8px;
+            color: $grey-600;
+            font-weight: 400;
+            &::placeholder{
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: $grey-400;
+            }
+
+            &:focus{
+                outline: 1px solid $second-color;
+            }
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            color: rgba(0, 0, 0, 0);
+            opacity: 1;
+            display: block;
+            background: url('/assets/img/calendar.svg') no-repeat;
+            width: 20px;
+            height: 20px;
+            border-width: thin;
+            
+
+            &:focus{
+                outline: 1px solid $second-color;
+            }
+        }
+
+        input[type="date"]{
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: $grey-400;
+        }
+
+        .radio{
+           
+            font-weight: 500;
+            margin-right: 0.1em;
+            cursor: pointer;
+        }
+
+        
+        .radio__input{
+            display: none;
+        }
+
+        .radio__radio{
+            width: 1.5em;
+            height: 1.5em;
+            border: 1px solid $second-color;
+            padding: 5px;
+            border-radius: 50%;
+            margin-right: 0.5em;
+            box-sizing: border-box;
+            &::after{
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: $second-color;
+                border-radius: 50%;
+                display: block;
+                transform: scale(0);
+                transition: transform 0.15s;
+            }
+        }
+
+        .radio__input:checked + .radio__radio::after{
+            transform: scale(1);
+        
+        }
+
+        .radio + .radio{
+            margin-left: 6rem;
+        }
+        
+       
+    }
+
+}

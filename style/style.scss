@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import  '../partials/normalize';
+@import '../partials/config';
+@import '../partials/sidebar';
+@import '../partials/nav';
+@import '../partials/header';
+@import '../partials/main-part';
+@import '../partials/owner';
+@import '../partials/edit';
+@import '../partials/responsive';
+

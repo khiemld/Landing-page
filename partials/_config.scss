@@ -1,0 +1,25 @@
+$primary-color: #490057;
+$bg-color: #f7f7f8;
+$second-color: #A303A0;
+$white-color: #fff;
+$border-bottom-color: #ededed;
+$grey-200: #ededed;
+$grey-400: #9b9b9b;
+$grey-600: #515151;
+$grey-800: #202020;
+$active-on: #2CC84A;
+$active-busy: #FF8F6B;
+$hover-color: #f2e8f2;
+$hover-fill: #b801b5;
+$orange: #FBB03B;
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: $bg-color;
+    font-family: 'Nunito', sans-serif;;
+    font-size: 1.6rem;
+    color: $second-color;
+}

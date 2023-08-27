@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,700&family=Nunito:wght@200;300;400;600;700;800&family=Open+Sans:wght@700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+        <div class="flex gap-[2%]">
+            <!------------------------------- SIDEBAR --------------------------------->
+            <div id="sidebar" class="fixed col-span-1">
+                <!-- LOGO -->
+                <div class="logo flex justify-center items-center">
+                    <span class="logo__image">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.9115 18.9336L29.0266 14.3773C28.802 13.0313 27.6319 12.0053 26.2221 12.0053C24.7064 12.0053 23.4677 13.1912 23.3834 14.6858L14.9349 21.6558C14.4228 21.1579 13.7238 20.8513 12.9531 20.8513C12.0366 20.8513 11.2214 21.2849 10.7014 21.9582L0.122783 16.7864C1.19914 7.33904 9.22039 0 18.9558 0C29.4173 0 37.8995 8.47481 37.9115 18.9336ZM10.1169 23.8986L0 18.9526V18.9558C0 29.4247 8.48678 37.9115 18.9558 37.9115C28.7132 37.9115 36.7487 30.5392 37.7959 21.0609L37.7711 21.1093L28.601 16.4067C28.093 17.1808 27.2173 17.692 26.2221 17.692C25.3636 17.692 24.594 17.3115 24.0726 16.71L15.7924 23.5412C15.7951 23.592 15.7965 23.6432 15.7965 23.6947C15.7965 25.265 14.5235 26.5381 12.9531 26.5381C11.4513 26.5381 10.2215 25.3738 10.1169 23.8986Z" fill="white"/>
+                        </svg>
+                    </span>
+                    <h1 class="ml-2 text-white">3MM</h1>
+                </div>
+                <!-- MENU -->
+                <div class=" flex justify-center">
+                    <div class="menu mt-[10rem] text-[1rem]">
+                        <div class="menu__item ">
+                            <div class="icon">
+                                <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 17V11H12V17H17V9H20L10 0L0 9H3V17H8Z" fill="white" />
+                                </svg>
+                            </div>
+
+                            <h3>Home</h3>
+                        </div>
+                        <div class="menu__item ">
+                            <div class="icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8ZM8 10C5.33 10 0 11.34 0 14V16H16V14C16 11.34 10.67 10 8 10Z"
+                                        fill="#FBB03B" />
+                                </svg>
+                            </div>
+
+                            <h3>Profile</h3>
+                        </div>
+                        <div class="menu__item">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <g clip-path="url(#clip0_1_48)">
+                                            <path
+                                                d="M20 2H4C2.9 2 2.01 2.9 2.01 4L2 22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM18 14H6V12H18V14ZM18 11H6V9H18V11ZM18 8H6V6H18V8Z"
+                                                fill="white" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_48">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <h3>Messages</h3>
+                        </div>
+                        <div class="menu__item">
+                            <div class="icon">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.81 0H13.191C16.28 0 18 1.78 18 4.83V15.16C18 18.26 16.28 20 13.191 20H4.81C1.77 20 0 18.26 0 15.16V4.83C0 1.78 1.77 0 4.81 0ZM5.08 4.66V4.65H8.069C8.5 4.65 8.85 5 8.85 5.429C8.85 5.87 8.5 6.22 8.069 6.22H5.08C4.649 6.22 4.3 5.87 4.3 5.44C4.3 5.01 4.649 4.66 5.08 4.66ZM5.08 10.74H12.92C13.35 10.74 13.7 10.39 13.7 9.96C13.7 9.53 13.35 9.179 12.92 9.179H5.08C4.649 9.179 4.3 9.53 4.3 9.96C4.3 10.39 4.649 10.74 5.08 10.74ZM5.08 15.31H12.92C13.319 15.27 13.62 14.929 13.62 14.53C13.62 14.12 13.319 13.78 12.92 13.74H5.08C4.78 13.71 4.49 13.85 4.33 14.11C4.17 14.36 4.17 14.69 4.33 14.95C4.49 15.2 4.78 15.35 5.08 15.31Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                            <h3>Purchases</h3>
+                        </div>
+                        <div class="menu__item">
+                            <div class="icon">
+                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18 4H15.82C15.93 3.69 16 3.35 16 3C16 1.34 14.66 0 13 0C11.95 0 11.04 0.54 10.5 1.35L10 2.02L9.5 1.34C8.96 0.54 8.05 0 7 0C5.34 0 4 1.34 4 3C4 3.35 4.07 3.69 4.18 4H2C0.89 4 0.00999999 4.89 0.00999999 6L0 17C0 18.11 0.89 19 2 19H18C19.11 19 20 18.11 20 17V6C20 4.89 19.11 4 18 4ZM13 2C13.55 2 14 2.45 14 3C14 3.55 13.55 4 13 4C12.45 4 12 3.55 12 3C12 2.45 12.45 2 13 2ZM7 2C7.55 2 8 2.45 8 3C8 3.55 7.55 4 7 4C6.45 4 6 3.55 6 3C6 2.45 6.45 2 7 2ZM18 17H2V15H18V17ZM18 12H2V6H7.08L5 8.83L6.62 10L9 6.76L10 5.4L11 6.76L13.38 10L15 8.83L12.92 6H18V12Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                            <h3>Return</h3>
+                        </div>
+                        <div class="menu__item">
+                            <div class="icon">
+                                <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 4H0V9H0.01L0 18C0 19.1 0.9 20 2 20H20V18H2V4ZM22 2H14L12 0H6C4.9 0 4.01 0.9 4.01 2L4 14C4 15.1 4.9 16 6 16H22C23.1 16 24 15.1 24 14V4C24 2.9 23.1 2 22 2ZM7 13L11.5 7L15 11.51L17.5 8.5L21 13H7Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                            <h3>Gallery</h3>
+                        </div>
+                        <div class="menu__item">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_21)">
+                                        <path
+                                            d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM9 17H7V10H9V17ZM13 17H11V7H13V17ZM17 17H15V13H17V17Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_21">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <h3>Analytics</h3>
+                        </div>
+                        <div class="menu__item">
+                            <div class="icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.4023 11.5801C18.7599 11.7701 19.0359 12.0701 19.23 12.3701C19.6082 12.9901 19.5775 13.7501 19.2096 14.4201L18.4942 15.6201C18.1161 16.2601 17.411 16.6601 16.6854 16.6601C16.3277 16.6601 15.9291 16.5601 15.6021 16.3601C15.3364 16.1901 15.0298 16.1301 14.7028 16.1301C13.691 16.1301 12.8428 16.9601 12.8121 17.9501C12.8121 19.1001 11.8719 20.0001 10.6967 20.0001H9.30683C8.12136 20.0001 7.18116 19.1001 7.18116 17.9501C7.16072 16.9601 6.3125 16.1301 5.30076 16.1301C4.96351 16.1301 4.65693 16.1901 4.40144 16.3601C4.07441 16.5601 3.66563 16.6601 3.31816 16.6601C2.58235 16.6601 1.8772 16.2601 1.49908 15.6201L0.793928 14.4201C0.415804 13.7701 0.395365 12.9901 0.773489 12.3701C0.937002 12.0701 1.24359 11.7701 1.59106 11.5801C1.8772 11.4401 2.06116 11.2101 2.23489 10.9401C2.74587 10.0801 2.43928 8.95009 1.57062 8.44009C0.558878 7.87009 0.231852 6.60009 0.814367 5.61009L1.49908 4.43009C2.09181 3.44009 3.35904 3.09009 4.381 3.67009C5.2701 4.15009 6.42491 3.83009 6.94611 2.98009C7.10962 2.70009 7.2016 2.40009 7.18116 2.10009C7.16072 1.71009 7.27314 1.34009 7.46731 1.04009C7.84543 0.420092 8.53015 0.0200916 9.27617 9.15527e-05H10.7171C11.4734 9.15527e-05 12.1581 0.420092 12.5362 1.04009C12.7202 1.34009 12.8428 1.71009 12.8121 2.10009C12.7917 2.40009 12.8837 2.70009 13.0472 2.98009C13.5684 3.83009 14.7232 4.15009 15.6225 3.67009C16.6343 3.09009 17.9117 3.44009 18.4942 4.43009L19.1789 5.61009C19.7717 6.60009 19.4447 7.87009 18.4227 8.44009C17.554 8.95009 17.2474 10.0801 17.7686 10.9401C17.9322 11.2101 18.1161 11.4401 18.4023 11.5801ZM7.10962 10.0101C7.10962 11.5801 8.40751 12.8301 10.012 12.8301C11.6165 12.8301 12.8837 11.5801 12.8837 10.0101C12.8837 8.44009 11.6165 7.18009 10.012 7.18009C8.40751 7.18009 7.10962 8.44009 7.10962 10.0101Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+
+                            <h3>Settings</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------------------CONTENT ---------------------------------->
+            <div class="relative block w-[85%] lg:w-[77%] ml-[12%] lg:ml-[21.5%] ">
+                <!---------------------------------- NAVIGATE ---------------------------------->
+                <nav class="mt-4">
+                    <div class="relative container flex justify-between">
+                        <div class="top-search flex items-center px-[2.8rem] bg-white bg-center rounded-[5px]">
+                            <span class="inline-block search-icon"><svg width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.166664 5.22413C0.166664 2.43097 2.40686 0.166672 5.17029 0.166672C6.49733 0.166672 7.77002 0.69951 8.70838 1.64797C9.64674 2.59642 10.1739 3.88281 10.1739 5.22413C10.1739 8.01728 7.93371 10.2816 5.17029 10.2816C2.40686 10.2816 0.166664 8.01728 0.166664 5.22413ZM10.0911 9.29834L11.5813 10.5012H11.6072C11.9087 10.806 11.9087 11.3001 11.6072 11.6048C11.3057 11.9095 10.8169 11.9095 10.5154 11.6048L9.27874 10.1874C9.16183 10.0697 9.09611 9.90972 9.09611 9.74289C9.09611 9.57606 9.16183 9.4161 9.27874 9.29834C9.50421 9.07439 9.86565 9.07439 10.0911 9.29834Z"
+                                        fill="#490057" />
+                                </svg></span>
+                            <input type="search" placeholder="Search" id="" />
+                        </div>
+
+                        <div class="profile flex items-center justify-between justify-self-end">
+                            <div class="profile__info mr-3">
+                                <h3 class="profile__name">Charles Deo</h3>
+                                <a href="#" class="login">Log out</a>
+                            </div>
+                            <a  href="./owner.html"><img src="./assets/img/img-profile.jpg" alt="img-profile"
+                                    class="profile-img  mr-2" /></a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!---------------------------------- HEADER ---------------------------------->
+                <div class="relative inline-block header mt-5 rounded-md">
+                    <div class="header__image"></div>
+                    <div class="header__person"></div>
+
+                    <div class=" flex flex-col md:flex-row header__info justify-between items-center mb-10">
+                        <div class="header-profile">
+                            <h3>Charles Deo</h3>
+                            <p>UX/UI Designer</p>
+                        </div>
+
+                        <div class=" flex flex-row header-contact justify-evenly items-start flex-wrap mobile-off">
+                            <div class="chatting mb-2 btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <g clip-path="url(#clip0_1_48)">
+                                            <path
+                                                d="M20 2H4C2.9 2 2.01 2.9 2.01 4L2 22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM18 14H6V12H18V14ZM18 11H6V9H18V11ZM18 8H6V6H18V8Z"
+                                                fill="white" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_48">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <button class="button-follow btn">Follow</button>
+                            <button class="button-schedule btn">Schedule a meeting</button>
+                        </div>
+
+                        <div class="flex flex-row header-contact justify-center items-start flex-wrap mobile-on">
+                            <div class="chatting mb-2">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.8">
+                                        <g clip-path="url(#clip0_1_48)">
+                                            <path
+                                                d="M20 2H4C2.9 2 2.01 2.9 2.01 4L2 22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM18 14H6V12H18V14ZM18 11H6V9H18V11ZM18 8H6V6H18V8Z"
+                                                fill="white" />
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_48">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <div class="chatting mb-2 text-white follow">
+                                <i class="fa-sharp fa-solid fa-user-plus"></i>
+                            </div>
+
+                            <div class="chatting mb-2 text-white shedule">
+                                <i class="fa-sharp fa-solid fa-calendar-days"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!---------------------------------- MAIN SECTION ---------------------------------->
+                <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 main-container my-10 justify-between">
+                    <div class="main-about col-span-1 order-1">
+                        <ul>
+                            About
+                            <li class="btn">
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8ZM8 10C5.33 10 0 11.34 0 14V16H16V14C16 11.34 10.67 10 8 10Z"
+                                            fill="#FBB03B" />
+                                    </svg>
+                                </span>
+                                <span class="left-info">Male</span>
+                            </li>
+                            <li class="btn">
+                                <span class="icon">
+                                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 6C10.11 6 11 5.1 11 4C11 3.62 10.9 3.27 10.71 2.97L9 0L7.29 2.97C7.1 3.27 7 3.62 7 4C7 5.1 7.9 6 9 6ZM13.6 15.99L12.53 14.92L11.45 15.99C10.15 17.29 7.87 17.3 6.56 15.99L5.49 14.92L4.4 15.99C3.75 16.64 2.88 17 1.96 17C1.23 17 0.56 16.77 0 16.39V21C0 21.55 0.45 22 1 22H17C17.55 22 18 21.55 18 21V16.39C17.44 16.77 16.77 17 16.04 17C15.12 17 14.25 16.64 13.6 15.99ZM15 9H10V7H8V9H3C1.34 9 0 10.34 0 12V13.54C0 14.62 0.88 15.5 1.96 15.5C2.48 15.5 2.98 15.3 3.34 14.93L5.48 12.8L7.61 14.93C8.35 15.67 9.64 15.67 10.38 14.93L12.52 12.8L14.65 14.93C15.02 15.3 15.51 15.5 16.03 15.5C17.11 15.5 17.99 14.62 17.99 13.54V12C18 10.34 16.66 9 15 9Z"
+                                            fill="#A303A0" />
+                                    </svg>
+                                </span>
+                                <span class="left-info">Born June 26, 1980</span>
+                            </li>
+                            <li class="btn">
+                                <span class="icon">
+                                    <svg width="14" height="17" viewBox="0 0 14 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 7.07009C0 3.16021 3.16555 0 6.9946 0C10.8344 0 14 3.16021 14 7.07009C14 9.04034 13.3058 10.8695 12.1631 12.4198C10.9025 14.13 9.34883 15.62 7.59998 16.7896C7.19972 17.0599 6.83848 17.0803 6.39919 16.7896C4.64037 15.62 3.08666 14.13 1.83688 12.4198C0.693398 10.8695 0 9.04034 0 7.07009ZM4.68945 7.29019C4.68945 8.6 5.72498 9.63017 6.99469 9.63017C8.26523 9.63017 9.31072 8.6 9.31072 7.29019C9.31072 5.99058 8.26523 4.91026 6.99469 4.91026C5.72498 4.91026 4.68945 5.99058 4.68945 7.29019Z"
+                                            fill="#A303A0" />
+                                    </svg>
+                                </span>
+                                <span class="left-info">2239 Hog Cam Road Schaumburg</span>
+                            </li>
+                            <li class="btn">
+                                <span class="icon">
+                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.9512 0C13.024 0 14.056 0.441667 14.8152 1.23417C15.5752 2.025 16 3.09167 16 4.20833V10.7917C16 13.1167 14.184 15 11.9512 15H4.048C1.8152 15 0 13.1167 0 10.7917V4.20833C0 1.88333 1.8072 0 4.048 0H11.9512ZM13.224 5.44987L13.288 5.3832C13.4792 5.14153 13.4792 4.79153 13.2792 4.54987C13.168 4.4257 13.0152 4.34987 12.856 4.3332C12.688 4.32403 12.528 4.3832 12.4072 4.49987L8.79999 7.49987C8.33599 7.9007 7.67119 7.9007 7.19999 7.49987L3.59999 4.49987C3.35119 4.3082 3.00719 4.3332 2.79999 4.5582C2.58399 4.7832 2.55999 5.14153 2.74319 5.39153L2.84799 5.49987L6.48799 8.4582C6.93599 8.82487 7.47919 9.02487 8.04799 9.02487C8.61519 9.02487 9.16799 8.82487 9.61519 8.4582L13.224 5.44987Z"
+                                            fill="#A303A0" />
+                                    </svg>
+                                </span>
+                                <p class="left-info">charles5182@ummoh.com</p>
+                            </li>
+                            <li class="btn">
+                                <span class="icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.9335 9.90336C12.3961 9.78777 11.971 10.0373 11.5946 10.2551C11.2091 10.4797 10.4761 11.0743 10.056 10.9221C7.90487 10.0364 5.88171 8.15363 5.00591 5.9939C4.85155 5.56478 5.4434 4.82713 5.66626 4.4371C5.88253 4.05954 6.12686 3.63042 6.01543 3.08904C5.91472 2.60254 4.61217 0.94511 4.15158 0.491875C3.84781 0.19249 3.53662 0.0278285 3.21718 0.00121652C2.01616 -0.0503442 0.674813 1.5522 0.439562 1.93557C-0.149804 2.75306 -0.146502 3.84082 0.449467 5.15978C1.88574 8.7025 7.31798 14.049 10.874 15.5393C11.5302 15.8462 12.1303 16 12.6693 16C13.1968 16 13.6665 15.8528 14.0701 15.5609C14.3747 15.3854 16.0429 13.9775 15.9992 12.7442C15.9727 12.4298 15.8085 12.1155 15.513 11.8111C15.0631 11.3462 13.4163 10.0048 12.9335 9.90336Z"
+                                            fill="#A303A0" />
+                                    </svg>
+                                </span>
+                                <span class="left-info">33757005467</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-body col-span-1 md:col-span-2 order-3 lg:order-2">
+                        <div class="top-main relative">
+                            <div class="main-select active" id="followers">
+                                Followers
+                            </div>
+                            <div class="main-select" id="followings">
+                                Followings
+                            </div>
+                            <div class="main-select" id="posts">Post</div>
+                            <div class="line absolute"></div>
+                        </div>
+
+                        <div class="feeds mt-5">
+                            <div class="feed">
+                                <div class="head flex justify-between">
+                                    <div class="user flex basis-[50%] w-1 items-center">
+                                        <div class="user-img"></div>
+                                        <div class="user-info">
+                                            <h4 class="user-name">Charles Deo</h4>
+                                            <p class="active-time">15 mins ago</p>
+                                        </div>
+                                    </div>
+                                    <span class="basis-[10%] edit-feed"><a href=""><svg width="16" height="4"
+                                                viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0ZM14 0C12.9 0 12 0.9 12 2C12 3.1 12.9 4 14 4C15.1 4 16 3.1 16 2C16 0.9 15.1 0 14 0ZM8 0C6.9 0 6 0.9 6 2C6 3.1 6.9 4 8 4C9.1 4 10 3.1 10 2C10 0.9 9.1 0 8 0Z"
+                                                    fill="#490057" />
+                                            </svg></a></span>
+                                </div>
+
+                                <div class="feed-img my-[3rem] lg:my-[2rem]"></div>
+
+                                <div class="footer">
+                                    <strong>Charles Deo</strong>
+                                    <span>New Blazer out here... $500!!!!!!</span>
+                                </div>
+
+                                <div class="action-button flex w-[17rem] justify-between">
+                                    <div class="react-button like-button flex items-center cursor-pointer like">
+                                        <span class="inline-block action-icon px-2">
+                                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.25 0.5C15.22 0.5 13.2717 1.445 12 2.93833C10.7283 1.445 8.78 0.5 6.75 0.5C3.15666 0.5 0.333328 3.32333 0.333328 6.91667C0.333328 11.3267 4.3 14.92 10.3083 20.38L12 21.9083L13.6917 20.3683C19.7 14.92 23.6667 11.3267 23.6667 6.91667C23.6667 3.32333 20.8433 0.5 17.25 0.5ZM12.1167 18.6417L12 18.7583L11.8833 18.6417C6.32999 13.6133 2.66666 10.2883 2.66666 6.91667C2.66666 4.58333 4.41666 2.83333 6.75 2.83333C8.54666 2.83333 10.2967 3.98833 10.915 5.58667H13.0967C13.7033 3.98833 15.4533 2.83333 17.25 2.83333C19.5833 2.83333 21.3333 4.58333 21.3333 6.91667C21.3333 10.2883 17.67 13.6133 12.1167 18.6417Z"
+                                                    fill="#A303A0" />
+                                            </svg>
+                                        </span>
+                                        <span class="count">1,498</span>
+                                    </div>
+
+                                    <div class="react-button comment-button flex items-center cursor-pointer">
+                                        <span class="inline-block action-icon px-2">
+                                            <svg width="24" height="22" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.3333 0.333313H2.66668C1.38334 0.333313 0.333344 1.38331 0.333344 2.66665V23.6666L5.00001 19H21.3333C22.6167 19 23.6667 17.95 23.6667 16.6666V2.66665C23.6667 1.38331 22.6167 0.333313 21.3333 0.333313ZM21.3333 16.6666H5.00001L2.66668 19V2.66665H21.3333V16.6666Z"
+                                                    fill="#A303A0" />
+                                            </svg>
+                                        </span>
+                                        <span class="count">3,000</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-section mt-5 active">
+                                    <div class="flex comment-self justify-between items-center">
+                                        <div class="comment-img"></div>
+                                        <div class="comment-text flex justify-between items-center">
+                                            <input type="text" name="" id="comment-input"
+                                                placeholder="Write your comment..." />
+                                            <a href=""><img src="./assets/img/send.svg" alt="" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="comment-list">
+                                        <div class="flex comment-item mt-5 items-start gap-[2%]">
+                                            <div class="comment-img basis-[4rem]"></div>
+                                            <div class="comment-body basis-[88%]">
+                                                <div class="comment-info">
+                                                    <h5>Beckham</h5>
+                                                    <p>Nice!!!</p>
+                                                </div>
+                                                <div class="comment-option flex">
+                                                    <a href="">Like</a>
+                                                    <a href="">Reply</a>
+                                                    <span>1h</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex comment-item mt-5 items-start gap-[2%]">
+                                            <div class="comment-img basis-[4rem]"></div>
+                                            <div class="comment-body basis-[88%]">
+                                                <div class="comment-info">
+                                                    <h5>Kante</h5>
+                                                    <p>
+                                                        Sed ut perspiciatis unde omnis iste natus error
+                                                        sit voluptatem accusantium doloremque
+                                                        laudantium, to!
+                                                    </p>
+                                                </div>
+                                                <div class="comment-option flex">
+                                                    <a href="">Like</a>
+                                                    <a href="">Reply</a>
+                                                    <span>1h</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="" class="block text-center mt-6 font-bold text-[#202020] text-2xl">View
+                                        more comments</a>
+                                </div>
+                            </div>
+
+                            <div class="feed">
+                                <div class="head flex justify-between">
+                                    <div class="user flex basis-[50%] w-1 items-center">
+                                        <div class="user-img"></div>
+                                        <div class="user-info">
+                                            <h4 class="user-name">Charles Deo</h4>
+                                            <p class="active-time">15 mins ago</p>
+                                        </div>
+                                    </div>
+                                    <span class="basis-[10%] edit-feed"><a href=""><svg width="16" height="4"
+                                                viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0ZM14 0C12.9 0 12 0.9 12 2C12 3.1 12.9 4 14 4C15.1 4 16 3.1 16 2C16 0.9 15.1 0 14 0ZM8 0C6.9 0 6 0.9 6 2C6 3.1 6.9 4 8 4C9.1 4 10 3.1 10 2C10 0.9 9.1 0 8 0Z"
+                                                    fill="#490057" />
+                                            </svg></a></span>
+                                </div>
+
+                                <div class="feed-img my-[3rem] lg:my-[2rem]"></div>
+
+                                <div class="footer">
+                                    <strong>Charles Deo</strong>
+                                    <span>New Blazer out here... $500!!!!!!</span>
+                                </div>
+
+                                <div class="action-button flex w-[17rem] justify-between">
+                                    <div class="react-button like-button flex items-center cursor-pointer">
+                                        <span class="inline-block action-icon px-2">
+                                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.25 0.5C15.22 0.5 13.2717 1.445 12 2.93833C10.7283 1.445 8.78 0.5 6.75 0.5C3.15666 0.5 0.333328 3.32333 0.333328 6.91667C0.333328 11.3267 4.3 14.92 10.3083 20.38L12 21.9083L13.6917 20.3683C19.7 14.92 23.6667 11.3267 23.6667 6.91667C23.6667 3.32333 20.8433 0.5 17.25 0.5ZM12.1167 18.6417L12 18.7583L11.8833 18.6417C6.32999 13.6133 2.66666 10.2883 2.66666 6.91667C2.66666 4.58333 4.41666 2.83333 6.75 2.83333C8.54666 2.83333 10.2967 3.98833 10.915 5.58667H13.0967C13.7033 3.98833 15.4533 2.83333 17.25 2.83333C19.5833 2.83333 21.3333 4.58333 21.3333 6.91667C21.3333 10.2883 17.67 13.6133 12.1167 18.6417Z"
+                                                    fill="#A303A0" />
+                                            </svg>
+                                        </span>
+                                        <span class="count">1,498</span>
+                                    </div>
+
+                                    <div class="react-button comment-button flex items-center cursor-pointer">
+                                        <span class="inline-block action-icon px-2">
+                                            <svg width="24" height="22" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21.3333 0.333313H2.66668C1.38334 0.333313 0.333344 1.38331 0.333344 2.66665V23.6666L5.00001 19H21.3333C22.6167 19 23.6667 17.95 23.6667 16.6666V2.66665C23.6667 1.38331 22.6167 0.333313 21.3333 0.333313ZM21.3333 16.6666H5.00001L2.66668 19V2.66665H21.3333V16.6666Z"
+                                                    fill="#A303A0" />
+                                            </svg>
+                                        </span>
+                                        <span class="count">3,000</span>
+                                    </div>
+                                </div>
+
+                                <div class="comment-section mt-5 active">
+                                    <div class="flex comment-self justify-between items-center">
+                                        <div class="comment-img"></div>
+                                        <div class="comment-text flex justify-between items-center">
+                                            <input type="text" name="" id="comment-input"
+                                                placeholder="Write your comment..." />
+                                            <a href=""><img src="./assets/img/send.svg" alt="" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="comment-list">
+                                        <div class="flex comment-item mt-5 items-start gap-[2%]">
+                                            <div class="comment-img basis-[4rem]"></div>
+                                            <div class="comment-body basis-[88%]">
+                                                <div class="comment-info">
+                                                    <h5>Beckham</h5>
+                                                    <p>Nice!!!</p>
+                                                </div>
+                                                <div class="comment-option flex">
+                                                    <a href="">Like</a>
+                                                    <a href="">Reply</a>
+                                                    <span>1h</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex comment-item mt-5 items-start gap-[2%]">
+                                            <div class="comment-img basis-[4rem]"></div>
+                                            <div class="comment-body basis-[88%]">
+                                                <div class="comment-info">
+                                                    <h5>Kante</h5>
+                                                    <p>
+                                                        Sed ut perspiciatis unde omnis iste natus error
+                                                        sit voluptatem accusantium doloremque
+                                                        laudantium, to!
+                                                    </p>
+                                                </div>
+                                                <div class="comment-option flex">
+                                                    <a href="">Like</a>
+                                                    <a href="">Reply</a>
+                                                    <span>1h</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="" class="block text-center mt-6 font-bold text-[#202020] text-2xl">View
+                                        more comments</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inline-block main-suggest col-span-1 order-2 lg:order-3">
+                        <h4 class="text-center">You might know</h4>
+                        <ul class="mt-8">
+                            <li>
+                                <div class="people-item">
+                                    <div class="people-img"></div>
+                                    <div class="people-info">
+                                        <h5>Eddie Lobanovskiy</h5>
+                                        <p>laboanovskiy@gmail.com</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="people-item">
+                                    <div class="people-img"></div>
+                                    <div class="people-info">
+                                        <h5>Eddie Lobanovskiy</h5>
+                                        <p>laboanovskiy@gmail.com</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="people-item">
+                                    <div class="people-img"></div>
+                                    <div class="people-info">
+                                        <h5>Eddie Lobanovskiy</h5>
+                                        <p>laboanovskiy@gmail.com</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
