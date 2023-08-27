@@ -1,0 +1,11 @@
+@mixin styleCard(){
+    background-color: $white-color;
+    border-radius: 10px;
+    padding: 4rem 2rem;
+    height: max-content;
+
+    @media screen and (max-width: 47.9375em){
+        padding: 2rem 2rem;
+        min-width: none;
+    }
+}

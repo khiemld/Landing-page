@@ -1,0 +1,359 @@
+/*Mobile: width < 768px*/
+@media screen and (max-width: 47.9375em){
+    html{
+        font-size: 50%;
+    }
+
+    body{
+        font-size: 1rem;
+    }
+
+    #sidebar{
+        width: 10%;
+        h1{
+            display: none;
+        }
+        .logo{
+            .logo__image{
+                svg {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+        .menu__item{
+            .icon {
+                svg {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            h3{
+                display: none;
+            }
+        }
+    }
+
+
+    nav{
+        .top-search{
+            flex-basis: 70%;
+            input[type="search"]{
+                height: 5rem;
+            }
+        }
+    
+        .profile{
+            flex-basis: 25%;
+        }
+    }
+
+    .header{
+        .header__image{
+            background-size: 100% 100%;
+            .button-edit-cover{
+                display: none;
+            }
+    
+            .edit-on{
+                display: flex;
+            }
+        }
+
+        .header__person{
+           right: 0px;
+           left: 0px;
+           margin-left: auto;
+            margin-right: auto;
+        }
+        .header__info{
+            margin-left: 0;
+            margin-right: 0rem;
+            width: 100%;
+            margin-top: 1rem;
+            .header-profile{
+                text-align: center;
+                margin-bottom: 1.2rem;
+            }
+
+            .header-contact{
+                width: 0;
+            }
+
+            .mobile-off{
+                display: none;
+            }
+
+            .mobile-on{
+                display: flex;
+                i{
+                    font-size: 1.6rem;
+                }
+
+            }
+
+            .header-contact{
+                width: 80%;
+                margin: 0;
+                .chatting{
+                    margin-left: 1.2rem;
+                    svg{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+
+                
+            }
+
+            
+        }
+    }
+   
+
+    .main-container{
+        .main-body{
+            padding: 21px;
+            .feeds .feed{
+                .user-img{
+                    @include avatarStyle($url:'../assets/img/img-profile.jpg', $width: 6rem);
+                    min-width: 6rem;
+                }
+                .user-info{
+                    .user-name{
+                        font-size: 1.6rem;
+                        font-weight: 800;
+                    }
+                    .active-time{
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .footer{
+                    font-size: 1.4rem;
+                }
+
+                .action-button{
+                    font-size: 1.4rem;
+                    margin-top: 1.4rem;
+                    .action-icon{
+                        svg{
+                            height: 18px;
+                            
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .right-side{
+        gap: 2%;
+        .main-suggest, .active-list{
+            // h4{
+            //     font-size: 1.8rem;
+            // }
+            flex-basis: 49%;
+            margin-top: 0.8rem;
+        }
+
+       
+    }
+
+   .edit-section{
+    justify-content: center;
+    
+    .left{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid $second-color;
+        .vertical-line{
+            display: none;
+        }
+        .left-profile{
+             align-items: center;
+             .profile-img{
+                width: 12rem;
+                height: 12rem;
+                min-width: 12rem;
+            }
+             .profile-info{
+                text-align: left;
+                margin-left: 1rem;
+                .profile-name{
+                    font-size: 2rem;
+                }
+                .profile-des{
+                    font-size: 1.4rem;
+                }
+             }
+
+             .btn-edit{
+                font-size: 2rem;
+             }
+        }
+
+        #btn-upload{
+            font-size: 1.3rem;
+            min-width: 2em;
+        }
+    }
+    .right{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 1.5rem;
+
+        label{
+            font-size: 1.4rem;
+            color: $primary-color;
+        }
+        input{
+            height: 4.6rem;
+            font-size: 1.4rem;
+            &::placeholder{
+                font-size: 1.4rem;
+            }
+        }
+
+        .edit-option{
+            #btn-cancel, #btn-save{
+                font-size: 1.4rem;
+                min-width: 6.5rem;
+            }
+        }
+
+        .radio__radio{
+            padding: 3px;
+        }
+
+        .radio + .radio{
+            margin-left: 2rem;
+        }
+    }
+   }
+
+
+
+}
+
+
+/*Tablet: width >=768px and width < 1024px*/
+@media screen and (min-width: 48em) and (max-width: 63.9375em){
+    html{
+        font-size: 60%;
+    }
+
+    body{
+        font-size: 1rem;
+    }
+    .header{
+        .header__image{
+            background-size: 100% 100%;
+        }
+    }
+
+    #sidebar{
+        width: 10%;
+        h1{
+            display: none;
+        }
+        .menu{
+            margin-top: 10rem;
+        }
+        .menu__item{
+            
+            .icon {
+                svg {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            h3{
+                display: none;
+            }
+        }
+    }
+
+    .main-container{
+        .main-body{
+            padding: 42px;
+            .feeds .feed{
+                .user-info{
+                    .user-name{
+                        font-size: 1.6rem;
+                        font-weight: 800;
+                    }
+                    .active-time{
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .footer{
+                    font-size: 1.5rem;
+                }
+
+                .action-button{
+                    margin-top: 1.4rem;
+                }
+                
+            }
+        }
+    }
+
+    .right-side{
+        gap: 2%;
+        .main-suggest, .active-list{
+            flex-basis: 49%;
+            margin-top: 0.8rem;
+        }
+    }
+
+    .edit-section{
+
+        .left{
+            .profile-img{
+                width: 12rem;
+                height: 12rem;
+                min-width: 12rem;
+            }
+
+            .btn-edit{
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+        }
+
+        .right{
+            row-gap: 1.6rem;
+            label{
+                font-size: 1.4rem;
+                color: $primary-color;
+            }
+            input{
+                height: 4.6rem;
+                font-size: 1.4rem;
+                &::placeholder{
+                    font-size: 1.4rem;
+                }
+            }
+
+            .edit-option{
+                #btn-cancel, #btn-save{
+                    font-size: 1.4rem;
+                    min-width: 6.5rem;
+                }
+            }
+        }
+    }
+    
+}
+
+

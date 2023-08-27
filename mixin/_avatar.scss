@@ -1,0 +1,9 @@
+@mixin avatarStyle($url: '', $width: 3.4rem){
+    background-image: url($url);
+    width: $width;
+    height: $width;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}

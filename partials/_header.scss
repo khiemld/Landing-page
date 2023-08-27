@@ -1,0 +1,104 @@
+@import '../mixin/button';
+.header {
+    width: 100%;
+    background-color: white;
+    min-height: 28rem;
+    height: max-content;
+    max-height: 48rem;
+    border-radius: 5px;
+    .header__image{
+        background-image: url('https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1210&q=80');
+        background-size: cover;
+        height: 28rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+
+       
+    }
+
+    .header__person {
+        background-image: url('../assets/img/img-profile.jpg');
+        height: 17rem;
+        width: 17rem;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        display: absolute;
+        margin-top: -14rem;
+        margin-left: 8rem;
+    }
+
+    
+    .chatting{
+        &:hover{
+            background-color: #b801b5;
+        }
+        background-color: $second-color;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+        svg{
+            g {
+                opacity: 1;
+            }
+        }
+        
+    }
+
+    .header__info{
+        margin-left: 20%;
+        margin-right: 1rem;
+       
+        color: $second-color;
+        width: 80%;
+        .header-profile{
+            h3{
+                font-weight: 800;
+                margin-bottom: 0.5rem;
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+
+        .mobile-on{
+            display: none;
+        }
+
+        .header-contact{
+            width: 50%;
+
+            
+
+            .button-follow{
+                &:hover{
+                    background-color: $hover-fill;
+                }
+                @include buttonStyle($bg-color: $second-color,$txt-color: $white-color);
+                font-weight: 600;
+                width: 15rem;
+            }
+
+            .button-schedule{
+                &:hover{
+                    background-color: $hover-color;
+                }
+                font-weight: 700;
+                @include buttonStyle($bg-color: $white-color,$txt-color: $second-color);
+                border: 2px solid $second-color ;
+                font-weight: 600;
+            }
+
+            
+           
+        }
+    }
+
+}
